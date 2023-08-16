@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns: xmlns:th="http://www.w3.org/1999/xhtml" th="http://www.thymeleaf.org">
+<body>
+<div class ="container">
+</div>
+<table>
+    <thead>
+    <tr>
+        <th># </th>
+        <th>이름</th>
+
+    </tr>
+    </thead>
+</table>
+</body>
+<tr th:each="member: ${members}">
+    <td th:text="${member.id}"></td>
+    <td th:text="${member.name}"></td>
+
+</tr>
+        </tbody>
+    </table>
+</div >
+</div>
+
+
+
+</body>
+</html>
